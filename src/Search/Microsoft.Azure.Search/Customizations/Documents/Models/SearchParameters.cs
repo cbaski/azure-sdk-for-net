@@ -78,7 +78,7 @@ namespace Microsoft.Azure.Search.Models
         /// by the match scores of documents. If no OrderBy is specified, the
         /// default sort order is descending by document match score. There
         /// can be at most 32 Orderby clauses.
-        /// </summary>
+T        /// </summary>
         public IList<string> OrderBy { get; set; }
 
         /// <summary>
@@ -110,7 +110,7 @@ namespace Microsoft.Azure.Search.Models
         /// <summary>
         /// Gets or sets a value that specifies whether any or all of the
         /// search terms must be matched in order to count the document as a
-        /// match. Possible values for this property include: 'any', 'all'.
+        /// match. The default is 'any'. Possible values for this property include: 'any', 'all'.
         /// </summary>
         public SearchMode SearchMode { get; set; }
 
